@@ -29,5 +29,9 @@ document.getElementById("cat-pic").addEventListener("click", function () {
     caption.id = "caption";
     document.body.appendChild(caption);
   }
+
   // set the caption to some words using innerHTML once caption is created
+  caption.innerHTML = "I need a moustache!";
+  caption.style.fontSize = "100px";
+  caption.style.color = "pink";
 });
