@@ -24,5 +24,10 @@ document.getElementById("cat-pic").addEventListener("click", function () {
   let caption = document.getElementById("caption");
   // if there is no element with the id caption, make one with createElement (make sure you give it its id)
   // use appendChild to add it to the bottom of the page
+  if (!caption) {
+    caption = document.createElement("p");
+    caption.id = "caption";
+    document.body.appendChild(caption);
+  }
   // set the caption to some words using innerHTML once caption is created
 });
