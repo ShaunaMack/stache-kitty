@@ -10,6 +10,7 @@ function addStache(event) {
 
   moustache.style.top = `${y - 50}px`;
   moustache.style.left = `${x - 100}px`;
+  moustache.style.transform = "rotate(-10deg)";
 }
 
 // Add an event listener to the correct DOM node here - using your addStache function, and firing on click.
