@@ -35,3 +35,18 @@ document.getElementById("cat-pic").addEventListener("click", function () {
   caption.style.fontSize = "100px";
   caption.style.color = "pink";
 });
+
+// extra Shauna was having way too much fun silly bits
+
+document.getElementById("cat-pic").addEventListener("click", function (event) {
+  let thoughtBubble = document.createElement("div");
+  thoughtBubble.innerHTML = "I need a moustache!";
+  thoughtBubble.style.position = "absolute";
+  thoughtBubble.style.top = `${event.pageY - 50}px`; // Slightly above the cat
+  thoughtBubble.style.left = `${event.pageX + 100}px`; // Slightly to the right
+  thoughtBubble.style.backgroundColor = "white";
+  thoughtBubble.style.padding = "10px";
+  thoughtBubble.style.borderRadius = "5px";
+  thoughtBubble.style.border = "1px solid black";
+  document.body.appendChild(thoughtBubble);
+});
