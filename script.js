@@ -5,10 +5,8 @@ function addStache(event) {
   const x = event.pageX; // Get the horizontal coordinate
   const y = event.pageY; // Get the vertical coordinate
 
-  // log the position (x and y coordinates) of the stache
-
-  moustache.style.top = `${y - 50}px`;
-  moustache.style.left = `${x - 100}px`;
+  // log the position (x and y coordinates) of the mouse cursor
+  console.log(`x coord ${x} y coord ${y}`);
 }
 
 // Add an event listener to the correct DOM node here - using your addStache function, and firing on click.
