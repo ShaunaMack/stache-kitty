@@ -1,5 +1,5 @@
 // locate the moustache in the DOM by the id
-const moustache = document.getElementById("");
+const moustache = document.getElementById("stache-pic");
 
 function addStache(event) {
   const x = event.pageX; // Get the horizontal coordinate
