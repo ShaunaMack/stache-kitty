@@ -21,6 +21,7 @@ document.onclick = addStache;
 // lets add a caption when we click the cat picture
 document.getElementById("cat-pic").addEventListener("click", function () {
   // define the caption variable using getElementById
+  let caption = document.getElementById("caption");
   // if there is no element with the id caption, make one with createElement (make sure you give it its id)
   // use appendChild to add it to the bottom of the page
   // set the caption to some words using innerHTML once caption is created
